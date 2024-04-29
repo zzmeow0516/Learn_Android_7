@@ -10,12 +10,14 @@
         android:name="com.example.learn_android_7.LeftFragment"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="1" />
+        android:layout_weight="1">
+    </fragment>
 
-    <fragment
-        android:id="@+id/rightFrag"
-        android:name="com.example.learn_android_7.RightFragment"
+    <!--所有控件在FrameLayout中默认摆放在左上角-->
+    <FrameLayout
+        android:id="@+id/rightLayout"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="1" />
+        android:layout_weight="1">
+    </FrameLayout>
 </LinearLayout>
