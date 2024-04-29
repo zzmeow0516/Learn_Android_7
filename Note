@@ -1,0 +1,6 @@
+一. android:layout_weight:
+
+1. 用于在 LinearLayout 中分配剩余的空间。这个属性通常与 android:layout_width（在水平线性布局中）或 android:layout_height（在垂直线性布局中）配合使用，来控制视图组件如何占据额外的空间。
+
+2. 当你在水平布局中使用 layout_weight 时，应将组件的 layout_width 设置为 0dp（即 match_parent），这样权重才能正确控制宽度分配
+   在垂直布局中使用 layout_weight 时，应将组件的 layout_height 设置为 0dp。这样，权重才会控制高度分配
