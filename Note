@@ -11,3 +11,12 @@
 按钮监听器的代码写在 onCreate() 方法中，是因为 onCreate() 是 Activity 的生命周期方法之一，
 当 Activity 创建时会调用此方法。按钮的 setOnClickListener() 方法设置监听器后，该监听器就会持续监听按钮的点击事件，而不受 onCreate() 方法的调用频率影响。
 即使 Activity 在 onCreate() 方法执行完毕后继续运行，监听器也会持续生效，直到按钮被销毁或移除监听器。
+
+
+------------------------------------
+三.
+fragment与activity的交互：
+
+1. 在activity中调用fragment的方法：val fragment1 = supportFragmentManager.findViewById(R.id.fragmentName) as FragmentName
+2. 在fragment中调用activity的方法：val activity1 = activity as MainActivity   //实际调用getActivity()
+3. 在fragment中，如果需要使用activity作为一个context对象，也可以通过getActivity()直接获取
