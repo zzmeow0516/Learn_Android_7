@@ -23,10 +23,21 @@ fragment与activity的交互：
 
 
 ---------------------------------------
-四.Fragment lifecycle:
+四.
+Fragment lifecycle:
 展示：(fragment重新被调回时，会不会onCreate取决于之前有没有调用addToBackStack)
 onAttach -> onCreate -> onCreateView -> onStart -> onResume
 替换/返回：（fragment被替换时，会不会直接onDestroy取决于之前有没有调用addToBackStack）
 -> onPause -> onStop -> onDestroyView
 结束：
 -> onDestroyView ->onDestroy ->onDetach
+
+
+
+--------------------------------------------
+五.
+限定符qualifier:
+常见的限定符包括
+大小（small, normal, large, xlarge ）
+分辨率（ldpi, mdpi, hdpi, xhdpi, xxhdpi）
+横竖屏（land, port）

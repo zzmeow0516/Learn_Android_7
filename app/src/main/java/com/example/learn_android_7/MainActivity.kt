@@ -41,16 +41,16 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun replaceFragment(fragment: Fragment) {
-        //获取fragmentManager, 在activity中可以直接通过getSupportFragmentManager获取.
-        // 这里是kotlin,可以直接写supportFragmentManager
-        val fragmentManager = supportFragmentManager
-        //通过beginTransaction开启一个事务
-        val transaction = fragmentManager.beginTransaction()
-        //向 容器 内添加或者替换fragment，调用事务的replace()，参数有两个：一个是容器(布局)id, 一个是目标fragment(这里是传入的参数)
-        transaction.replace(R.id.rightLayout, fragment)
-        //将transaction加入backStack
-        transaction.addToBackStack(null)
-        //调用transaction的commit()提交事务
-        transaction.commit()
+//        //获取fragmentManager, 在activity中可以直接通过getSupportFragmentManager获取.
+//        // 这里是kotlin,可以直接写supportFragmentManager
+//        val fragmentManager = supportFragmentManager
+//        //通过beginTransaction开启一个事务
+//        val transaction = fragmentManager.beginTransaction()
+//        //向 容器 内添加或者替换fragment，调用事务的replace()，参数有两个：一个是容器(布局)id, 一个是目标fragment(这里是传入的参数)
+//        transaction.replace(R.id.rightLayout, fragment)
+//        //将transaction加入backStack
+//        transaction.addToBackStack(null)
+//        //调用transaction的commit()提交事务
+//        transaction.commit()
     }
 }
